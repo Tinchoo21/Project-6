@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game Zone</title>
+  <!--
+    Name : Adnan Tinjak
+    ID: 190302036
+    Course : CS412[2]
+    Assignment : Project 6-Game Zone
+    Due date : /
+   -->
+   <link rel="shortcut icon" type="image/png" href="favicon.png">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <script src="https://kit.fontawesome.com/fd02d8a662.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <div class="jm-logo">
+            <a href="index.html">
+            <img src="logo2.png" alt="Logo" />
+            </a> 
+            </div>
+      
+      <div class="nav-links" id="navLinks">
+        
+        <ul>
+  
+        <li><a href="#photos">PHOTOS</a></li>
+        <li><a href="#address">LOCATION</a></li>
+        
+        <li><a href="#games">GAMES</a></li>
+        
+      </ul>
+      </div>
+
+    </nav> 
+  
+ 
+    
+
+  </section>
+  
+    <a class= "gotopbtn" href="#top" ><i class="fas fa-arrow-circle-up"></i></a>
+
+
+  <div class="slideshow-container">
+
+    <a name="photos"><h3>PHOTOS</h3></a> 
+
+    <div class="mySlides fade">
+    
+      <img src="image3.jpg" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+  
+      <img src="image4.jpg" style="width:100%">
+
+    </div>
+    
+    <div class="mySlides fade">
+     
+      <img src="image2.jpg" style="width:100%">
+   
+    </div>
+     
+    <div class="mySlides fade">
+  
+        <img src="image5.jpeg" style="width:100%">
+     
+      </div>
+      
+      <div class="mySlides fade">
+       
+        <img src="image7.jpg" style="width:100%">
+     
+      </div>
+      <div class="mySlides fade">
+       
+        <img src="image6.jpg" style="width:100%">
+     
+      </div>
+
+    
+  
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+      </div>
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+    </script>
+    
+    <div class="address">
+
+       <a name="address"><h3>ADDRESS</h3></a> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11513.07562355905!2d18.3466359!3d43.829522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e5074eb3ba8b5b9!2sSokerhana%20Game%20Zone-Dobrinja!5e0!3m2!1sen!2sba!4v1638466526658!5m2!1sen!2sba" 
+        width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </h2>
+    </div>
+
+ 
+    <div class="games">   
+       <a name="games"><h3>GAMES</h3></a>
+
+    <section id="portfolio">
+      <div class="project">
+        <img class="project__image" src="image21.jpg" />
+       
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=vLj-27T-SEQ" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="gamesimg2.jpg" />
+      
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=mKak2Kk5eDI" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="gamesimg3.jpg" />
+      
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=WJW-bzXZM8M" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="gamesimg4.webp" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=QkkoHAzjnUs" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gamesimg5.png" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=-IJuKT1mHO8" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gamesimg6.jpg" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=aTS9n_m7TW0" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gamesimg7.jpg" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=FQRNw0jRYxY" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gamesimg8.webp" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=OcUzwnA569M" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+     
+     
+    </section>
+    <section id="portfolio">
+      <div class="project">
+        <img class="project__image" src="gameminecraft.jpg" />
+       
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=MmB9b5njVbA" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="gamereddead.jpg" />
+      
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=SXvQ1nK4oxk" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="gamesims4.webp" />
+      
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=z00mK3Pxc8w" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="gameapex.webp" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=oQtHENM_GZU" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gameassasin.webp" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=ssrNcwxALS4" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gamehitman3.webp" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=Z29ORu6_p34" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gamecyber.jpg" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=LembwKDo1Dk" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="gameunch.png" />
+    
+        <div class="grid__overlay">
+          <a href="https://www.youtube.com/watch?v=y1Rx-Bbht5E" target="_blank"><button class="viewbutton">view more</button></a>
+        </div>
+      </div>
+     
+     
+    </section>
+    </div>
+
+    
+</body>
+  </html>
